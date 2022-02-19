@@ -1,5 +1,6 @@
 def get_input():
-    start = int(input("""
+    end = int(input("""
+Purple cylinder is:
 1: Dept. Store
 2: Armory
 3: Infirmary
@@ -8,7 +9,8 @@ def get_input():
 6: Dragon Command  
 """))
 
-    end = int(input("""
+    start = int(input("""
+Green light is:
 1: Dept. Store
 2: Armory
 3: Infirmary
@@ -333,7 +335,11 @@ Supply Depot - 2
 Tank Factory - 1
 """)
 
-    #input("Enter to continue...")
+    choice = input("Y to continue or N to exit ")
+    if choice.upper() == "Y":
+        pass
+    else:
+        quit()
 
 
 def main():
